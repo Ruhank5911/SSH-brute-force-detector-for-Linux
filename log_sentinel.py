@@ -31,7 +31,7 @@ class IPReport:
 
     @property
     def compromised(self) -> bool:
-        """Many failures followed by a success = likely cracked account."""
+        """Many failures followed by a success = likely crack account."""
         return self.failed > 0 and bool(self.successful_logins)
 
     def to_dict(self):
